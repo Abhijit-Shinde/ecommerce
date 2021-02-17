@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato' , sans-serif;
+    letter-spacing: 1px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f1f3f6;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: 80px;
+}
+
+nav{
+    flex: 1;
+}
+
+nav ul{
+    display:flex;
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.container p{
+    font-weight: bold;
+    font-size: 18px;
+    height: 90px;
+    margin:0 45px;
+    padding-top: 20px;
+}
+
+.container a{
+    text-decoration: none;
+    color:black;
+    letter-spacing: 1px;
+}
+.container a:hover{
+    color: #33a0ff;
+    transition: .5s;
+}
+
+.main{
+    display: flex;
+    padding: 0px 55px;
+    height: auto;
+}
+.sidebar{
+    width: 300px;
+    margin-right: 25px;
+}
+
+h4{
+    padding:20px 0px 0px 22px;
+}
+
+.catgry{
+    height: 300px;
+    background-color: #f6f7f8;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.catgry ul{
+    list-style-type: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.catgry ul li{
+    padding: 10px;
+    font-weight: bold;
+    height: 35px;
+}
+
+.catgry ul li a{
+    text-decoration: none;
+}
+
+.prices{
+    height: 150px;
+    background-color:#f6f7f8;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+input[type="number"]{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    margin-right: 30px;
+    border: 1px solid #f1f3f6;
+    outline:none;
+}
+
+
+.color{
+    height: 120px;
+    background-color: #f6f7f8;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.choose{
+    display: flex;
+    padding-left: 25px;
+    justify-content: space-evenly;
+}
+.circles{
+    background: #f6f7f8;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.circles:first-child{
+    border: 0.1875em solid lightskyblue;
+}
+.brand{
+    height: 250px;
+    background-color: #f6f7f8;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+table{
+    padding-left: 20px;
+}
+.brand table tr{
+    cursor: pointer;
+}
+.brand table tr:hover{
+    color: #33a0ff;
+    transition: .5s;
+}
+table tr:nth-child(2){
+    color: #33a0ff;
+}
+
+table td{
+    font-size: 12pt;
+    font-weight: bolder;
+}
+.more{
+    height: 50px;
+    background-color: #f6f7f8;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0 15px 0;
+    cursor: pointer;
+}
+.more:hover{
+    background-color: #f1f3f4;
+    transition: .5s;
+}
+
+.details{
+    width: 80%;
+}
+
+.header{
+    height: 300px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #2e90e5;
+    border-radius: 5px;
+    background-image: url("images/iPhone6s_discover_desktop_08_iOS9.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.top #info{
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.filter{
+    height: 60px;
+    margin-bottom: 30px;
+    background-color: #f6f7f8;
+    border-radius: 5px;
+}
+#filter_lis{
+    margin: 0px 50px 20px 0px;
+}
+span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropbtn {
+    background-color: white;
+    margin-left: 2px;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid #f1f3f4;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #f1f3f4;
+    transition: .5s;
+}
+
+.products{
+    background-color: #f1f3f4;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+  
+.column {
+    flex: 33.33%;
+    justify-content: space-evenly;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #f1f3f6;
+    background-color: #f6f7f8;
+    border-radius: 5px;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.products h4:last-child{
+    color: red;
+    font-weight: bold;
+}
+
+s{
+    font-size: 14pt;
+    color: grey;
+}
+.checked {
+    color: orange;
+}
+
+.page_nav{
+    background-color: #f1f3f4;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+  
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.pagination a.active {
+    background-color: black;
+    color: white;
+  }
+  
+.pagination a:hover:not(.active){
+    background-color: #f1f3f4;
+}
+
+.first,.second,.third{
+    flex: 33.33%;
+    width: 100%;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 250px;
+    color: #c1c8ce;
+    line-height: 1.3em;
+}
+
+.first h5{
+    padding: 30px 30px 0px 40px;
+}
+
+.first img{
+    width: 160px;
+    height: 60px;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+
+.second,.third{
+    padding: 20px 50px 0px 30px;
+}
+
+#footer_ps{
+    margin-left: 0px;
+    font-size: 15px;
+}
+
+.links{
+    margin-top: 20px;
+}
+.links img{
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#cards{
+    margin: 5px;
+}
